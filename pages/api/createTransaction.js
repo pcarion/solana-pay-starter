@@ -37,7 +37,7 @@ const createTransaction = async (req, res) => {
     const buyerPublicKey = new PublicKey(buyer);
 
 //    const network = WalletAdapterNetwork.Devnet;
-    const network = WalletAdapterNetwork.mainnet-beta;
+    const network = WalletAdapterNetwork.Mainnet;
 
     const endpoint = clusterApiUrl(network);
     const connection = new Connection(endpoint);
