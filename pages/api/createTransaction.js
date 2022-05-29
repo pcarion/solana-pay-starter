@@ -4,7 +4,9 @@ import { createTransferCheckedInstruction, getAssociatedTokenAddress, getMint } 
 import BigNumber from "bignumber.js";
 import products from "./products.json";
 
-const usdcAddress = new PublicKey("Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr");
+// const usdcAddress = new PublicKey("Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr"); // devnet
+const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"); // mainnet
+
 const sellerAddress = '9TdKhCoPYo1pnHar88dFKTHw6niEys6ZYjLHKqnpEivc'
 const sellerPublicKey = new PublicKey(sellerAddress);
 
@@ -34,7 +36,9 @@ const createTransaction = async (req, res) => {
     const bigAmount = BigNumber(itemPrice);
     const buyerPublicKey = new PublicKey(buyer);
 
-    const network = WalletAdapterNetwork.Devnet;
+//    const network = WalletAdapterNetwork.Devnet;
+    const network = WalletAdapterNetwork.mainnet-beta;
+
     const endpoint = clusterApiUrl(network);
     const connection = new Connection(endpoint);
 

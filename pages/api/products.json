@@ -7,5 +7,14 @@
     "image_url": "https://i.imgur.com/rVD8bjt.png",
     "filename": "charlotte-00.png",
     "hash": "QmbHzor8utpKWAwBmqScBVcvexhfNdzALbjs2rsQuPfR5n"
+  },
+  {
+    "id": 2,
+    "name": "Another Product",
+    "price": "0.01",
+    "image_url": "https://media.giphy.com/media/l0HlO3BJ8LALPW4sE/giphy.gif",
+    "description": "My new product",
+    "filename": "emojis.zip",
+    "hash": "QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
   }
 ]
